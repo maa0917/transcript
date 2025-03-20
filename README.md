@@ -3,11 +3,11 @@
 ### build
 
 ```zsh
-docker build -t transcript:latest .
+docker-compose build
 ```
 
 ### run
 
 ```zsh
-docker run --rm transcript:latest <video_id>
+docker-compose run transcript-service <video_id>
 ```
