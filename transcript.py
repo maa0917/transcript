@@ -9,7 +9,7 @@ def main():
 
     video_id = sys.argv[1]
     try:
-        transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
+        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ja', 'en'])
         all_text = "\n".join([item['text'] for item in transcript_list])
         print(all_text)
     except Exception as e:
