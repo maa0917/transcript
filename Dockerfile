@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-RUN pip install --no-cache-dir youtube-transcript-api
+RUN pip install --no-cache-dir youtube-transcript-api openai
 
 WORKDIR /app
 

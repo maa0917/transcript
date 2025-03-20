@@ -9,5 +9,5 @@ docker-compose build
 ### run
 
 ```zsh
-docker-compose run transcript-service <video_id>
+docker-compose run --rm transcript-service <video_id>
 ```
